@@ -33,6 +33,5 @@ The **Mental Diary** is a web application designed for neurodivergent people to 
 - 
 ## How to run
 1. Clone this repository:
-2. ```bash
-3. git clone https://github.com/yourusername/mental-diary.git
-4. cd mental-diary
+2. git clone https://github.com/yourusername/mental-diary.git
+3. cd mental-diary
