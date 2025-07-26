@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Dashboard</h2>
+
+<canvas id="barChart" width="400" height="200"></canvas>
+<canvas id="lineChart" width="400" height="200" class="mt-4"></canvas>
+
+<!-- Novo bloco: Comentários recentes com intensidade -->
+<h3 class="mt-5">Comentários Recentes</h3>
+{% for entry in entries %}
+  <div class="entry">
+    <span class="emotion">{{ entry.emotion|capitalize }}</span> -
+    <span class="intensity">Intensidade: {{ entry.intensity }}</span><br>
+    <span class="comment">{{ entry.thought }}</span>
+    <span class="date text-muted" style="font-size: 0.9em;">({{ entry.timestamp }})</span>
+  </div>
+{% else %}
+  <p class="mt-4">Nenhum comentário registrado ainda.</p>
+{% endfor %}
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+/* eslint-disable */
+
+    // Dados do backend para o gráfico de barras (emoções)
+    const emotionsLabels = {{ emotions_labels | tojson }};
+    const emotionsData = {{ emotions_data | tojson }};
+
+    // Gráfico de barras - emoções
+    const ctxBar = document.getElementById('barChart').getContext('2d');
+    new Chart(ctxBar, {
+        type: 'bar',
+        data: {
+            labels: emotionsLabels,
+            datasets: [{
+                label: 'Frequência das Emoções',
+                data: emotionsData,
+                backgroundColor: 'rgba(54, 162, 235, 0.7)'
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    precision: 0
+                }
+            }
+        }
+    });
+
+    // Dados para gráfico de linha (intensidade média diária)
+    const datesLabels = {{ dates | tojson }};
+    const intensitiesData = {{ avg_intensities | tojson }};
+
+    // Gráfico de linha - intensidade
+    const ctxLine = document.getElementById('lineChart').getContext('2d');
+    new Chart(ctxLine, {
+        type: 'line',
+        data: {
+            labels: datesLabels,
+            datasets: [{
+                label: 'Intensidade Média Diária',
+                data: intensitiesData,
+                fill: false,
+                borderColor: 'rgba(255, 99, 132, 0.7)',
+                tension: 0.3
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 10
+                }
+            }
+        }
+    });
+
+/* eslint-enable */
+</script>
+{% endblock %}

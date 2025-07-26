@@ -1,0 +1,109 @@
+/* Reset básico */
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+.container {
+    padding-top: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Cards */
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #357ABD;
+}
+
+/* Formulários */
+form input, form select, form textarea {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Mensagens de erro e sucesso */
+.alert {
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Gráficos */
+canvas {
+    max-width: 100%;
+}
+
+/* Histórico (index) */
+.entry {
+    background-color: #fefefe;
+    border-left: 5px solid #4a90e2;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.entry .date {
+    font-size: 14px;
+    color: #888;
+}
+
+.entry .emotion {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* Rodapé fixo (opcional futuro) */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    color: #aaa;
+}
