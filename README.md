@@ -30,9 +30,9 @@ The **Mental Diary** is a web application designed for neurodivergent people to 
 - Jinja2 (template engine).
 - Werkzeug (secure file upload).
 - Flask-Session (user sessions).
-
----
-
+- 
 ## How to run
-
 1. Clone this repository:
+2. ```bash
+3. git clone https://github.com/yourusername/mental-diary.git
+4. cd mental-diary
