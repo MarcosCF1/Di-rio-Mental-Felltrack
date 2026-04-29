@@ -1,38 +1,67 @@
-# Mental Diary - CS50 Final Project
-Video Demo:   https://www.youtube.com/watch?v=UiWDBnZwy3U&feature=youtu.be
+# 🧠 Diário Mental Felltrack
 
-## Description
+> Aplicativo web para registro diário de emoções e saúde mental— inspirado na metodologia Harvard 2025
 
-The **Mental Diary** is a web application designed for neurodivergent people to record their daily emotions, thoughts, and experiences in a simple and secure way. The system allows users to log entries containing emotions, intensity, free-text thoughts, and photos. The goal is to aid self-awareness and emotional tracking.
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)]()
+[![Status](https://img.shields.io/badge/Status-Concluído-22c55e?style=flat-square)]()
 
----
-
-## Features
-
-- Secure user authentication (login and registration).
-- Create daily entries with:
-  - Felt emotion.
-  - Emotion intensity.
-  - Free-text for thoughts.
-  - Image uploads.
-- View recent entries on the home page.
-- Complete history page with simple filters.
-- Dashboard with charts showing emotions and average intensity over time.
-- Responsive and accessible user interface.
+🎥 **Demo:** [Assista no YouTube](https://www.youtube.com/watch?v=UiWDBnZwy3U&feature=youtu.be)
 
 ---
 
-## Technologies Used
+## Sobre o Projeto
 
-- Python 3 + Flask (web framework).
-- SQLite (lightweight database).
-- HTML, CSS, Bootstrap (frontend).
-- JavaScript + Chart.js (data visualization).
-- Jinja2 (template engine).
-- Werkzeug (secure file upload).
-- Flask-Session (user sessions).
-- 
-## How to run
-1. Clone this repository:
-2. git clone https://github.com/yourusername/mental-diary.git
-3. cd mental-diary
+O **Diário Mental Felltrack** é um app web desenvolvido para pessoas neurodivergentes registrarem emoções, pensamentos e experiências diárias de forma simples e segura. Surgiu como projeto final do **CS50 (Harvard)**, com foco em autoconhecimento e acompanhamento emocional.
+
+---
+
+## ✨ Funcionalidades
+
+- 🔐 **Autenticação segura** — login e cadastro de usuários
+- 🗒️ **Registros diários** com:
+  - Emoção sentida e intensidade
+  - Texto livre para pensamentos
+  - Upload de imagens
+- 📊 **Dashboard** com gráficos de emoções e intensidade média ao longo do tempo
+- 📜 **Histórico completo** com filtros simples
+- 📱 Interface responsiva e acessível
+
+---
+
+## 🛠️ Stack Tecnológico
+
+| Camada | Tecnologia |
+|---|---|
+| Backend | Python 3 + Flask |
+| Banco de Dados | SQLite |
+| Frontend | HTML, CSS, Bootstrap |
+| Gráficos | JavaScript + Chart.js |
+| Templates | Jinja2 |
+| Upload | Werkzeug |
+| Sessões | Flask-Session |
+
+---
+
+## 🚀 Como Executar
+
+```bash
+# Clone o repositório
+git clone https://github.com/MarcosCF1/Di-rio-Mental-Felltrack.git
+cd Di-rio-Mental-Felltrack
+
+# Instale as dependências
+pip install -r requirements.txt
+
+# Execute o app
+python app.py
+```
+
+Acesse: `http://localhost:5000`
+
+---
+
+## 👤 Autor
+
+**Marcos Felipe** — [github.com/MarcosCF1](https://github.com/MarcosCF1)
