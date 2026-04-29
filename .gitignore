@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Flask / app secrets
+*.env
+.env.local
+.env.production
+
+# Database files — NEVER commit real data
+*.db
+*.sqlite
+*.sqlite3
+
+# Flask session files — contain user tokens
+flask_session/
+
+# Uploads (user-generated content)
+diario_mental/static/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
